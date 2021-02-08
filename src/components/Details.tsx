@@ -1,6 +1,6 @@
 import DetailsTile from './DetailsTile';
 
-import './details.css';
+import '../styles/details.css';
 
 const Details = () => {
     return (

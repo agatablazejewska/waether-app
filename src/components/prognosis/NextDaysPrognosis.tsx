@@ -1,5 +1,5 @@
-import './nextDaysPrognosis.css';
-import Weather from './utils/weatherEnum';
+import '../../styles/nextDaysPrognosis.css';
+import Weather from '../../utils/weatherEnum';
 import WeekDayPrognosis from './WeekDayPrognosis';
 
 const NextDaysPrognosis = () => {

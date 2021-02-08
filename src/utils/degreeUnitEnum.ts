@@ -1,6 +1,6 @@
-enum Degree {
+enum DegreeUnit {
     Celsius = '°C',
     Fahrenheit = '°F',
 }
 
-export default Degree;
+export default DegreeUnit;

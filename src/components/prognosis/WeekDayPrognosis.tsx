@@ -1,6 +1,6 @@
-import Weather from './utils/weatherEnum';
+import Weather from '../../utils/weatherEnum';
 import WeatherIcon from './WeatherIcon';
-import './weekDayPrognosis.css';
+import '../../styles/weekDayPrognosis.css';
 
 const WeekDayPrognosis = ({weekday, temperature, weather}
 : {weekday: string, temperature: number, weather: Weather}) => {

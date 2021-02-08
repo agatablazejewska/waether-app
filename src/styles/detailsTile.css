@@ -1,7 +1,11 @@
 .DetailsTile {
-    width: 5em;
-    padding: 1.5em;
+    width: 7em;
+    padding: 1em 1.5em;
     text-align: center;
     background-color: #767587;
     border-radius: 30px;
+}
+
+.detail {
+    margin: 0.4em 0;
 }
