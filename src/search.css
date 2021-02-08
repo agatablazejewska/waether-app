@@ -4,11 +4,11 @@
     background-color: #767587;
     color: #F7F7FF;
     border: 1px solid #464555;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .Search input {
     padding-left: 1em;
     border: 1px solid #464555;
-    border-radius: 20px 0 0 20px;
+    border-radius: 10px 0 0 10px;
 }
