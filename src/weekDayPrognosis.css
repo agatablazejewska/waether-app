@@ -5,6 +5,7 @@
 }
 
 .WeekDayPrognosis .WeatherIcon {
+    width: 2.5em;
 }
 
 .WeekDayPrognosis .day {

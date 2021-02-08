@@ -5,9 +5,7 @@ import WeatherIcon from './WeatherIcon';
 const CityAndTemperature = ({ city, temperature }: {city: string, temperature: number}) => {
     return (
         <div className="CityAndTemperature">
-            <div className="cityName">
-                <h1>{city}</h1>
-            </div>
+            <h1 className="cityName">{city}</h1>
 
             <div className="weather">
                 <WeatherIcon weather={Weather.Snowing} />

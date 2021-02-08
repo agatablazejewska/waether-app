@@ -1,7 +1,7 @@
 .DetailsTile {
-    display: inline;
-    max-width: fit-content;
-    padding: 2em;
+    width: 5em;
+    padding: 1.5em;
     text-align: center;
     background-color: #767587;
+    border-radius: 30px;
 }

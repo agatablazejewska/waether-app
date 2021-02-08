@@ -1,4 +1,14 @@
 .Search button {
     max-width: fit-content;
-    padding: 0.5em;
+    padding: 0.5em 2em;
+    background-color: #767587;
+    color: #F7F7FF;
+    border: 1px solid #464555;
+    border-radius: 0 20px 20px 0;
+}
+
+.Search input {
+    padding-left: 1em;
+    border: 1px solid #464555;
+    border-radius: 20px 0 0 20px;
 }
