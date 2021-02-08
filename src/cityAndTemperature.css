@@ -1,0 +1,7 @@
+.CityAndTemperature .WeatherIcon {
+    max-width: 9em;
+}
+
+.CityAndTemperature .weather {
+    display: flex;
+}

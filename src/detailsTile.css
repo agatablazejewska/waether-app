@@ -1,0 +1,7 @@
+.DetailsTile {
+    display: inline;
+    max-width: fit-content;
+    padding: 2em;
+    text-align: center;
+    background-color: #767587;
+}
