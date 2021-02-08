@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="44.102" viewBox="0 0 41 44.102">
+  <defs>
+    <filter id="Ellipse_7" x="18.165" y="0" width="34.753" height="34.753" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.188" y1="1.059" x2="0.794" y2="0.211" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#fff" stop-opacity="0.698"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_14" data-name="Group 14" transform="translate(-584.96 -275.894)">
+    <g id="Group_13" data-name="Group 13">
+      <g transform="matrix(1, 0, 0, 1, 584.96, 275.89)" filter="url(#Ellipse_7)">
+        <circle id="Ellipse_7-2" data-name="Ellipse 7" cx="9.877" cy="9.877" r="9.877" transform="translate(18.67 0.5)" fill="#f9ff00"/>
+      </g>
+      <path id="Path_30" data-name="Path 30" d="M624.466,298.655a9.969,9.969,0,0,1-9.877,9.987H594.836a9.834,9.834,0,0,1-2.908-19.238,10.007,10.007,0,0,1,9.822-8.981,9.713,9.713,0,0,1,9.768,8.244h3.071A9.97,9.97,0,0,1,624.466,298.655Z" fill="url(#linear-gradient)"/>
+      <path id="Path_31" data-name="Path 31" d="M612.127,302.673a6.161,6.161,0,0,1-6.1,6.173H593.815a6.078,6.078,0,0,1-1.8-11.89,6.184,6.184,0,0,1,6.071-5.551,6,6,0,0,1,6.037,5.1h1.9A6.161,6.161,0,0,1,612.127,302.673Z" fill="url(#linear-gradient)"/>
+    </g>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="1.325" cy="1.325" r="1.325" transform="translate(604.569 316.587)" fill="#fff" opacity="0.9"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="1.87" cy="1.87" r="1.87" transform="translate(611.505 313.236)" fill="#fff" opacity="0.9"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="1.87" cy="1.87" r="1.87" transform="translate(594.671 311.365)" fill="#fff" opacity="0.9"/>
+  </g>
+</svg>

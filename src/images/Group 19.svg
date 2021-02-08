@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="44.102" viewBox="0 0 41 44.102">
+  <defs>
+    <filter id="Ellipse_11" x="18.998" y="0" width="34.753" height="34.753" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.188" y1="1.059" x2="0.794" y2="0.211" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#fff" stop-opacity="0.698"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.188" y1="1.059" x2="0.794" y2="0.211" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_19" data-name="Group 19" transform="translate(-380.372 -374.713)">
+    <path id="Path_39" data-name="Path 39" d="M396.51,404.229l-4.24,5.987a.926.926,0,0,0,.756,1.461h0a.926.926,0,0,1,.788,1.411l-2.26,3.675a.242.242,0,0,0,.367.307l7.183-6.425a.926.926,0,0,0-.448-1.6h0a.927.927,0,0,1-.622-1.392l1.466-2.407a.926.926,0,0,0-.791-1.407h-1.442A.926.926,0,0,0,396.51,404.229Z" fill="#30b3ff" opacity="0.9"/>
+    <g id="Group_18" data-name="Group 18">
+      <g transform="matrix(1, 0, 0, 1, 380.37, 374.71)" filter="url(#Ellipse_11)">
+        <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="9.877" cy="9.877" r="9.877" transform="translate(19.5 0.5)" fill="#f9ff00"/>
+      </g>
+      <path id="Path_40" data-name="Path 40" d="M419.879,398.307A9.969,9.969,0,0,1,410,408.294H390.249a9.834,9.834,0,0,1-2.909-19.238,10.008,10.008,0,0,1,9.823-8.981,9.712,9.712,0,0,1,9.767,8.244H410A9.97,9.97,0,0,1,419.879,398.307Z" fill="url(#linear-gradient)"/>
+      <path id="Path_41" data-name="Path 41" d="M407.54,402.325a6.162,6.162,0,0,1-6.1,6.173H389.227a6.078,6.078,0,0,1-1.8-11.89,6.184,6.184,0,0,1,6.07-5.551,6,6,0,0,1,6.037,5.1h1.9A6.161,6.161,0,0,1,407.54,402.325Z" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>
