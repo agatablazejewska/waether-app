@@ -1,0 +1,7 @@
+.degree-units_wider-screen .DegreeUnitTab {
+    border-radius: 0 15px 15px 0;
+}
+
+.degree-units_small-screen .DegreeUnitTab {
+    border-radius: 15px;
+}

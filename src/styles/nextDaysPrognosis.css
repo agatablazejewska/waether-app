@@ -1,4 +1,15 @@
 .NextDaysPrognosis {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media(max-width: 400px) {
+    .NextDaysPrognosis {
+        align-content: flex-start;
+    }
+
+    .NextDaysPrognosis .WeekDayPrognosis {
+        margin: 0 0.5em;
+    }
 }

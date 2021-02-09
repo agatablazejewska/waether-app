@@ -19,3 +19,43 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media(max-width: 990px) {
+    .CityAndTemperature {
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 660px) {
+    .CityAndTemperature .temperature {
+        font-size: 2rem;
+    }
+
+    .CityAndTemperature .WeatherIcon  {
+        width: 5em;
+    }
+}
+
+@media(max-width: 575px) {
+    .CityAndTemperature .weather {
+        display: block;
+    }
+
+    .CityAndTemperature .temperature {
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .CityAndTemperature .weather {
+        display: flex;
+    }
+
+    .CityAndTemperature .temperature {
+        padding-left: 0.6em;
+    }
+
+    .CityAndTemperature {
+        align-items: flex-start;
+    }
+}

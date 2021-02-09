@@ -1,5 +1,6 @@
 import '../styles/app.css';
 import '../styles/styles.css';
+import DegreeUnits from './DegreeUnits';
 import DegreeUnit from '../utils/degreeUnitEnum';
 import DegreeUnitTab from './DegreeUnitTab';
 import Details from './Details';
@@ -13,13 +14,11 @@ const App = () => {
           <div className="container">
               <Search />
               <CityAndTemperature city="London" temperature={23}/>
+              <DegreeUnits mobile={true} />
               <Details />
               <NextDaysPrognosis />
           </div>
-          <div className={"degreeUnits"}>
-              <DegreeUnitTab unit={DegreeUnit.Celsius} />
-              <DegreeUnitTab unit={DegreeUnit.Fahrenheit} />
-          </div>
+          <DegreeUnits mobile={false} />
       </div>
   );
 }

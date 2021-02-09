@@ -10,6 +10,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #ECEBF3;
+    overflow-y: scroll;
 }
 
 h1 {
