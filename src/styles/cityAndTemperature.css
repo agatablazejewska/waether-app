@@ -26,7 +26,7 @@
     }
 }
 
-@media(max-width: 660px) {
+@media(max-width: 672px) {
     .CityAndTemperature .temperature {
         font-size: 2rem;
     }
