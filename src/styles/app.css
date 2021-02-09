@@ -64,6 +64,18 @@
     }
 }
 
+@media(max-width: 3000px) {
+    .App {
+        width: 30%;
+    }
+}
+
+@media(max-width: 2500px) {
+    .App {
+        width: 35%;
+    }
+}
+
 @media(max-width: 2000px) {
     .App {
         width: 45%;
