@@ -18,6 +18,10 @@
     border-radius: 30px;
     max-width: 100%;
     background-color: #464555;
+    background-image: url('../images/background.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 5%;
+    background-size: 8%;
     display: grid;
     grid-template-columns: 2fr 4em 2em 0.5fr;
     grid-template-rows: 0.5fr 17em 1fr;
@@ -128,6 +132,10 @@
 }
 
 @media(max-width: 860px) {
+    .container {
+        background-position: 95% 5%;
+    }
+
     .Search {
         grid-column: 1/5;
     }
@@ -153,6 +161,8 @@
 
 @media(max-width: 500px) {
     .container {
+        background-size: 10%;
+        background-position: 97% 4%;
         padding: 2em;
     }
 
@@ -179,6 +189,8 @@
     }
 
     .container {
+        background-size: 10%;
+        background-position: 97% 4%;
         grid-template-rows: 4em 10em 7em 1em 1fr;
     }
 
@@ -205,6 +217,7 @@
 
 @media(max-width: 330px) {
     .container {
+        background-image: none;
         padding: 2em 0.8em;
     }
 }
