@@ -4,6 +4,16 @@
     grid-template-columns: 1fr 50px;
 }
 
+.GitHub {
+    width: 95%;
+    text-align: center;
+}
+
+.GitHub a, .GitHub a:hover, .GitHub a:active, .GitHub a:visited, .GitHub a:link {
+    color: black;
+    font-weight: bold;
+}
+
 .degree-units_wider-screen {
     grid-column: 2;
 }

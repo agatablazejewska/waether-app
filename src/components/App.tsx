@@ -8,15 +8,20 @@ import Search from './Search';
 
 const App = () => {
   return (
-      <div className={"App"}>
-          <div className="container">
-              <Search />
-              <CityAndTemperature city="London" temperature={23}/>
-              <DegreeUnits mobile={true} />
-              <Details />
-              <NextDaysPrognosis />
+      <div>
+          <div className={"App"}>
+              <div className="container">
+                  <Search />
+                  <CityAndTemperature city="London" temperature={23}/>
+                  <DegreeUnits mobile={true} />
+                  <Details />
+                  <NextDaysPrognosis />
+              </div>
+              <DegreeUnits mobile={false} />
           </div>
-          <DegreeUnits mobile={false} />
+          <div className={"GitHub"}>
+              <a href={"https://github.com/agatablazejewska/weather-app"}>GitHub</a>
+          </div>
       </div>
   );
 }
