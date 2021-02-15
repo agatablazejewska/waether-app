@@ -1,8 +1,6 @@
 import '../styles/app.css';
 import '../styles/styles.css';
 import DegreeUnits from './DegreeUnits';
-import DegreeUnit from '../utils/enums/degreeUnitEnum';
-import DegreeUnitTab from './DegreeUnitTab';
 import Details from './Details';
 import CityAndTemperature from './prognosis/CityAndTemperature';
 import NextDaysPrognosis from './prognosis/NextDaysPrognosis';
