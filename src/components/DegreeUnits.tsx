@@ -1,5 +1,5 @@
 import DegreeUnitTab from './DegreeUnitTab';
-import DegreeUnit from '../utils/degreeUnitEnum';
+import DegreeUnit from '../utils/enums/degreeUnitEnum';
 
 import '../styles/degreeUnits.css';
 

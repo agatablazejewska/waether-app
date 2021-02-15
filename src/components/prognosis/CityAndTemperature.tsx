@@ -1,5 +1,5 @@
 import '../../styles/cityAndTemperature.css';
-import Weather from '../../utils/weatherEnum';
+import Weather from '../../utils/enums/weatherEnum';
 import WeatherIcon from './WeatherIcon';
 
 const CityAndTemperature = ({ city, temperature }: {city: string, temperature: number}) => {

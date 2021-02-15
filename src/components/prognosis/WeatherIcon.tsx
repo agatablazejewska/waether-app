@@ -1,4 +1,4 @@
-import Weather from '../../utils/weatherEnum';
+import Weather from '../../utils/enums/weatherEnum';
 import {ReactComponent as Sunny } from '../../images/Ellipse 1.svg';
 import {ReactComponent as Cloudy } from '../../images/Group 2.svg';
 import {ReactComponent as PartiallyCloudy } from '../../images/Group 3.svg';

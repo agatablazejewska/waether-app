@@ -1,4 +1,4 @@
-import Weather from '../../utils/weatherEnum';
+import Weather from '../../utils/enums/weatherEnum';
 import WeatherIcon from './WeatherIcon';
 import '../../styles/weekDayPrognosis.css';
 
