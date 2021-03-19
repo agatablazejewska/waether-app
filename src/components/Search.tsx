@@ -4,7 +4,7 @@ import CityContext from '../context/CityContext';
 
 const Search = () => {
     const [localCity, setLocalCity] = useState('');
-    const [_city, setCity] = useContext(CityContext);
+    const [city, setCity] = useContext(CityContext);
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
