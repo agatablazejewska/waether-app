@@ -7,31 +7,43 @@ import CityAndTemperature from './components/prognosis/CityAndTemperature';
 import NextDaysPrognosis from './components/prognosis/NextDaysPrognosis';
 import Search from './components/Search';
 import CityContext from './context/CityContext';
-import WeatherDataContext from './context/WeatherDataContext';
+import CurrentWeatherDataContext from './context/CurrentWeatherDataContext';
+import DailyWeatherDataContext from './context/DailyWeatherDataContext';
+
 
 const App = () => {
-  const cityHook = useState('');
-  const weatherDataHook = useState([]);
+  const cityHook = useState("");
+  const dailyWeatherDataHook = useState([]);
+  const currentWeatherDataHook = useState({
+        temperature: null,
+        description: '',
+        humidity: null,
+        wind: null,
+        icon: ''
+  });
+
 
   return (
       <CityContext.Provider value={cityHook}>
-          <WeatherDataContext.Provider value={weatherDataHook}>
-              <div>
-                  <div className={"App"}>
-                      <div className="container">
-                          <Search />
-                          <CityAndTemperature temperature={23}/>
-                          <DegreeUnits mobile={true} />
-                          <Details />
-                          <NextDaysPrognosis />
+          <CurrentWeatherDataContext.Provider value={currentWeatherDataHook}>
+              <DailyWeatherDataContext.Provider value={dailyWeatherDataHook}>
+                  <div>
+                      <div className={"App"}>
+                          <div className="container">
+                              <Search />
+                              <CityAndTemperature />
+                              <DegreeUnits mobile={true} />
+                              <Details />
+                              <NextDaysPrognosis />
+                          </div>
+                          <DegreeUnits mobile={false} />
                       </div>
-                      <DegreeUnits mobile={false} />
+                      <div className={"GitHub"}>
+                          <a href={"https://github.com/agatablazejewska/weather-app"}>GitHub</a>
+                      </div>
                   </div>
-                  <div className={"GitHub"}>
-                      <a href={"https://github.com/agatablazejewska/weather-app"}>GitHub</a>
-                  </div>
-              </div>
-          </WeatherDataContext.Provider>
+              </DailyWeatherDataContext.Provider>
+          </CurrentWeatherDataContext.Provider>
       </CityContext.Provider>
   );
 }
