@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Weather from '../../utils/enums/weatherEnum';
 import {ReactComponent as Sunny } from '../../images/Ellipse 1.svg';
 import {ReactComponent as Cloudy } from '../../images/Group 2.svg';
@@ -13,25 +14,38 @@ import {ReactComponent as Windy_Sunny } from '../../images/Group 23.svg';
 import '../../styles/weatherIcon.css';
 
 const components = {
-    sunny: Sunny,
-    cloudy: Cloudy,
-    partially_cloudy: PartiallyCloudy,
-    raining: Raining,
-    raining_sunny: Raining_Sunny,
-    snowing: Snowing,
-    snowing_sunny: Snowing_Sunny,
-    thunder: Thunder,
-    thunder_sunny: Thunder_Sunny,
-    windy: Windy,
-    windy_sunny: Windy_Sunny
+    Sunny: Sunny,
+    Cloudy: Cloudy,
+    Partially_Cloudy: PartiallyCloudy,
+    Raining: Raining,
+    Raining_sunny: Raining_Sunny,
+    Snowing: Snowing,
+    Thunder: Thunder,
+    Windy: Windy,
 }
 
-const WeatherIcon = ({weather}: {weather: Weather}) => {
-    const Icon = components[weather];
+const WeatherIcon = ({iconId}: {iconId: number}) => {
+    const MatchIcon = (): JSX.Element => {
+        if(iconId >= 800 && iconId <= 801 ) {
+            console.log(Weather[iconId]);
+
+            //@ts-ignore
+            const Icon = components[Weather[iconId]];
+            return <Icon />;
+        }
+
+        const iconFirstNum = Number(iconId.toString().charAt(0));
+        console.log(Weather[iconFirstNum]);
+
+        // @ts-ignore
+        const Icon = components[Weather[iconFirstNum]];
+        return <Icon />;
+    }
+
 
     return (
         <div className={"WeatherIcon"}>
-            <Icon />
+           <MatchIcon />
         </div>
     )
 }

@@ -19,22 +19,22 @@ const CityAndTemperature = () => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        getWeatherData();
+        if(city) {
+            getWeatherData();
+        }
     }, [city]);
 
     const updateData = (response: AxiosResponse<any>) => {
         const data = response.data;
         const currentWeatherData = data.current;
-        const cityNameFirstLetterUpperCase =  city.charAt(0).toUpperCase() + city.slice(1);
 
         setError(false);
-        setCity(cityNameFirstLetterUpperCase);
         setCurrentWeatherData({
             temperature: Math.round(currentWeatherData.temp),
             description: currentWeatherData.weather[0].description,
             humidity: currentWeatherData.humidity,
             wind: currentWeatherData.wind_speed,
-            icon: `https://openweathermap.org/img/wn/${currentWeatherData.weather[0].icon}@2x.png`
+            iconId: currentWeatherData.weather[0].id
         });
         setNextDaysWeatherData(response);
     };
@@ -49,7 +49,7 @@ const CityAndTemperature = () => {
                 weekDay: moment(elem.dt*1000).day(),
                 temperature: Math.round(elem.temp.day),
                 description: elem.weather[0].description,
-                icon: `https://openweathermap.org/img/wn/${elem.weather[0].icon}@2x.png`
+                iconId: elem.weather[0].id
             }
         });
 
@@ -62,7 +62,7 @@ const CityAndTemperature = () => {
             description: '',
             humidity: null,
             wind: null,
-            icon: ''
+            iconId: 8
         });
         setError(true);
     };
@@ -80,14 +80,17 @@ const CityAndTemperature = () => {
             .catch(handleError);
     }
 
+    const cityFirstLetterUpperCase = () => {
+        return city.charAt(0).toUpperCase() + city.slice(1);
+    }
 
     if(currentWeatherData.temperature) {
         return (
             <div className="CityAndTemperature">
-                <h1 className="cityName">{city}</h1>
+                <h1 className="cityName">{cityFirstLetterUpperCase()}</h1>
 
                 <div className="weather">
-                    <WeatherIcon weather={Weather.Snowing} />
+                    <WeatherIcon iconId={currentWeatherData.iconId} />
                     <h2 className={"temperature"}>{currentWeatherData.temperature} °C</h2>
                 </div>
             </div>

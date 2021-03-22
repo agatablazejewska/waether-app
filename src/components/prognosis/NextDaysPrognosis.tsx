@@ -14,7 +14,8 @@ const NextDaysPrognosis = () => {
             {
                dailyWeatherData.map(elem => {
                     return (
-                        <WeekDayPrognosis weekday={WeekDays[elem.weekDay]} temperature={elem.temperature} weatherIcon={Weather.Windy_Sunny}/>
+                        <WeekDayPrognosis weekday={WeekDays[elem.weekDay]} temperature={elem.temperature} weatherIconId={elem.iconId}
+                        key={elem.weekDay}/>
                     )
                 })
             }
