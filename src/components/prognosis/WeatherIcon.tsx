@@ -27,15 +27,12 @@ const components = {
 const WeatherIcon = ({iconId}: {iconId: number}) => {
     const MatchIcon = (): JSX.Element => {
         if(iconId >= 800 && iconId <= 801 ) {
-            console.log(Weather[iconId]);
-
             //@ts-ignore
             const Icon = components[Weather[iconId]];
             return <Icon />;
         }
 
         const iconFirstNum = Number(iconId.toString().charAt(0));
-        console.log(Weather[iconFirstNum]);
 
         // @ts-ignore
         const Icon = components[Weather[iconFirstNum]];
