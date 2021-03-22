@@ -19,7 +19,7 @@ const App = () => {
         description: '',
         humidity: null,
         wind: null,
-        icon: ''
+        iconId: 8
   });
 
 

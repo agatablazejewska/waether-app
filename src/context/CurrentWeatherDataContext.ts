@@ -8,7 +8,7 @@ const initialState = {
     description: '',
     humidity: null,
     wind: null,
-    icon: ''
+    iconId: 8
 }
 
 const CurrentWeatherDataContext = createContext<CurrentWeatherDataContextType>([initialState, () => {}])
