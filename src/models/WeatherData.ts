@@ -3,7 +3,7 @@ type WeatherData = {
     description: string,
     humidity: number | null,
     wind: number | null,
-    icon: string
+    iconId: number
 }
 
 export default WeatherData;

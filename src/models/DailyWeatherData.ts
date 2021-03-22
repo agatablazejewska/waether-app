@@ -4,7 +4,7 @@ type DailyWeatherData = {
     weekDay: WeekDays
     temperature: number,
     description: string,
-    icon: string,
+    iconId: number,
 }
 
 export default DailyWeatherData;
