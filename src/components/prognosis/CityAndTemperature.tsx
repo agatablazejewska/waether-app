@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from 'react';
 import CityContext from '../../context/CityContext';
 import CurrentWeatherDataContext from '../../context/CurrentWeatherDataContext';
 import DailyWeatherDataContext from '../../context/DailyWeatherDataContext';
+import DegreeUnitContext from '../../context/DegreeUnitContext';
 import WeatherData from '../../models/WeatherData';
 import DailyWeatherData from '../../models/DailyWeatherData';
 import Weather from '../../utils/enums/weatherEnum';
@@ -14,6 +15,7 @@ import Loader from "react-loader-spinner";
 
 const CityAndTemperature = () => {
     const [city, setCity] = useContext(CityContext);
+    const [degreeUnit] = useContext(DegreeUnitContext);
     const [currentWeatherData, setCurrentWeatherData] = useContext(CurrentWeatherDataContext);
     const [dailyWeatherData, setDailyWeatherData] = useContext(DailyWeatherDataContext);
     const [error, setError] = useState(false);
@@ -91,7 +93,7 @@ const CityAndTemperature = () => {
 
                 <div className="weather">
                     <WeatherIcon iconId={currentWeatherData.iconId} />
-                    <h2 className={"temperature"}>{currentWeatherData.temperature} °C</h2>
+                    <h2 className={"temperature"}>{currentWeatherData.temperature} {degreeUnit}</h2>
                 </div>
             </div>
         )
