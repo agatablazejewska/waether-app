@@ -9,12 +9,19 @@ const Details = () => {
     const humidity = currentWeatherData.humidity ? `${currentWeatherData.humidity}%` : "";
     const wind = currentWeatherData.wind ? `${currentWeatherData.wind} km/h` : "";
 
-    return (
-        <div className="Details">
-            <DetailsTile detail="Humidity" value={humidity} />
-            <DetailsTile detail="Wind" value={wind} />
-        </div>
-    )
+    if(currentWeatherData.temperature) {
+        return (
+            <div className="Details">
+                <DetailsTile detail="Humidity" value={humidity} />
+                <DetailsTile detail="Wind" value={wind} />
+            </div>
+        )
+    }
+    else {
+        return null;
+    }
+
+
 }
 
 export default Details;
