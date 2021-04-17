@@ -11,6 +11,23 @@ const DegreeUnitTab = ({unit} : {unit: degreeUnitEnum}) => {
     const [currentWeatherData, setCurrentWeatherData] = useContext(CurrentWeatherDataContext);
     const [dailyWeatherData, setDailyWeatherData] = useContext(DailyWeatherDataContext);
 
+    const changeDegreeUnits = () => {
+        if(degreeUnit === unit) return;
+
+        setDegreeUnit(unit);
+        if(unit === DegreeUnit.Fahrenheit) {
+            updateTemperature(convertToFahrenheit);
+        }
+        else {
+            updateTemperature(convertToCelsius);
+        }
+    }
+
+    const updateTemperature = (convertFunc: Function) => {
+        updateCurrentWeatherData(convertFunc);
+        updateDailyWeatherData(convertFunc);
+    }
+
     function updateCurrentWeatherData(convertFunc: Function) {
         const currentTemp = {
             temperature: convertFunc(currentWeatherData.temperature),
@@ -27,10 +44,6 @@ const DegreeUnitTab = ({unit} : {unit: degreeUnitEnum}) => {
         setDailyWeatherData(dailyTemp);
     }
 
-    const updateTemperature = (convertFunc: Function) => {
-        updateCurrentWeatherData(convertFunc);
-        updateDailyWeatherData(convertFunc);
-    }
 
     const convertToFahrenheit = (temp: number) => {
         const converted = (temp * (9/5)) + 32;
@@ -40,18 +53,6 @@ const DegreeUnitTab = ({unit} : {unit: degreeUnitEnum}) => {
     const convertToCelsius = (temp: number) => {
         const converted = (temp - 32) * (5/9);
         return converted.toFixed();
-    }
-
-    const changeDegreeUnits = () => {
-        if(degreeUnit === unit) return;
-
-        setDegreeUnit(unit);
-        if(unit === DegreeUnit.Fahrenheit) {
-            updateTemperature(convertToFahrenheit);
-        }
-        else {
-            updateTemperature(convertToCelsius);
-        }
     }
 
     return (
